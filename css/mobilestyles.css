@@ -1,0 +1,319 @@
+@media only screen and (max-width: 1100px) {
+  body.landing .whatsnew article.post {
+    width: 100%;
+    margin-bottom: 30px; }
+
+  body.contact .form .formwrap {
+    width: 65%; }
+
+  body.landing .products .product {
+    width: calc(33.3% - 10px); }
+
+  .pagehead {
+    padding: 0 15px; } }
+@media only screen and (max-width: 980px) {
+  footer .sitefooter .footercontent {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 40px; }
+
+  footer .sitefooter .footercontent > div:first-child {
+    width: 100%;
+    margin-bottom: 30px; }
+
+  body.supportoptions .options {
+    gap: 15px; }
+
+  body.supportoptions .option {
+    width: 50%; }
+
+  body.landing #commercial_support .flex p {
+    margin-right: 40px; }
+
+  footer .sitefooter .footercontent {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 40px; } }
+@media only screen and (max-width: 940px) {
+  body.landing section.welcome .flexwrap .duckdb, main.job_template section.welcome .flexwrap .duckdb {
+    width: 100%; }
+
+  body.landing section.welcome .flexwrap .officeimage {
+    width: 100%; }
+
+  body.landing section#jobs .flexwrap,
+  body.landing section#about .flexwrap {
+    flex-wrap: wrap; }
+
+  body.landing section#jobs .jobs_collection,
+  body.landing section#jobs .about {
+    width: 100%; }
+
+  .wrap p {
+    max-width: 600px; }
+
+  body.landing section#about .about {
+    width: 100%; }
+
+  body.landing section#about .team {
+    width: 100%;
+    margin-top: 40px; } }
+@media only screen and (max-width: 860px) {
+  body.landing .about .teammembers .member {
+    width: 50%; }
+
+  body.landing section.support .options {
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: 20px; }
+
+  body.landing section.support .intro {
+    width: 100%; } }
+@media only screen and (max-width: 800px) {
+  body.landing .about .teammembers .member {
+    width: 50%; }
+
+  body.landing .welcome .mainlinks ul,
+  .headerline {
+    overflow: hidden; }
+
+  body.landing .products .product {
+    width: 100%;
+    margin-bottom: 50px; }
+
+  body.landing .about .teammembers .member {
+    width: 100%; }
+
+  body.landing .about .teammembers .member:nth-child(2), body.landing .about .teammembers .member:nth-child(3) {
+    margin-top: 30px; }
+
+  body.landing .welcome .mainlinks ul li {
+    margin-bottom: 10px;
+    width: 80%; }
+
+  body.contact .form .formwrap {
+    width: 80%; }
+
+  body.landing .welcome .mainlinks ul, .sitefooter .footercontent {
+    flex-wrap: wrap; } }
+@media only screen and (max-width: 780px) {
+  footer .sitefooter .footercontent > div:first-child {
+    width: 100%;
+    margin-bottom: 30px; } }
+@media only screen and (max-width: 700px) {
+  body.contact .intro {
+    flex-wrap: wrap; }
+
+  body.contact .intro > div {
+    width: 100%; }
+
+  body.contact .intro .graphic {
+    height: 170px; }
+
+  body.landing label.onlymobile {
+    display: block; }
+
+  main.job_template .applyform {
+    width: 100%;
+    margin-top: 50px; }
+
+  main.job_template a.backtoarchive {
+    margin-top: 20px; } }
+@media only screen and (max-width: 660px) {
+  body.contact .form .formwrap {
+    width: 95%; }
+
+  .hamburger {
+    display: flex; }
+
+  nav.mobile .hamburger {
+    display: flex !important; }
+
+  .landingmenu {
+    margin-left: -15px; }
+
+  .headerline nav {
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: 75%;
+    right: 0;
+    top: 70px;
+    border-radius: 0px 0px 15px 15px;
+    border: 1px solid #393939;
+    border-top: 0;
+    background: rgba(9, 9, 9, 0.85);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    right: -100%;
+    pointer-events: none;
+    transition: all .3s; }
+    .headerline nav > div {
+      margin-left: 20px; }
+    .headerline nav.slidein {
+      pointer-events: all;
+      right: 0%; }
+    .headerline nav ul.menu {
+      display: flex;
+      flex-direction: column;
+      left: 0; }
+      .headerline nav ul.menu li {
+        line-height: 20px;
+        margin-left: 20px; }
+        .headerline nav ul.menu li a {
+          color: black; }
+
+  .pagehead h1 {
+    font-size: 35px;
+    padding: 50px 15px; }
+
+  header .headerline .headercontent .landingmenu nav .menu {
+    left: 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 30px; }
+    header .headerline .headercontent .landingmenu nav .menu a {
+      line-height: 20px; }
+
+  main {
+    transition: opacity .3s; }
+
+  footer .sitefooter .footercontent,
+  header .headerline .headercontent {
+    max-width: calc(100% - 30px); }
+
+  footer .sitefooter .footercontent {
+    padding: 45px 0px; }
+
+  footer .sitefooter .footercontent {
+    column-gap: 0; }
+
+  footer .sitefooter .footercontent > div {
+    width: 180px;
+    box-sizing: border-box;
+    margin-bottom: 30px; }
+
+  footer .sitefooter .footercontent > div:first-child {
+    width: 100%; }
+
+  body.landing footer .sitefooter .footercontent .footernavigation,
+  .sitefooter .footercontent .footernavigation {
+    column-gap: 30px;
+    row-gap: 40px;
+    flex-wrap: wrap; }
+    body.landing footer .sitefooter .footercontent .footernavigation > div,
+    .sitefooter .footercontent .footernavigation > div {
+      width: calc(50% - 15px); }
+    body.landing footer .sitefooter .footercontent .footernavigation a,
+    .sitefooter .footercontent .footernavigation a {
+      line-height: 1.5; }
+
+  .jobs_collection .job a.button {
+    position: relative;
+    transform: none;
+    margin-top: 7px; }
+
+  body.landing #commercial_support .flex > div {
+    width: 100%;
+    order: 2; }
+    body.landing #commercial_support .flex > div:nth-child(2) {
+      order: 1;
+      margin-bottom: 30px; }
+
+  body.landing .welcome h1,
+  body.landing .intro h1,
+  body.landing section#jobs h1,
+  body.landing section.blog h1,
+  body.landing section#about h1 {
+    font-size: 35px; }
+
+  body.landing section.support .options .option {
+    width: 100%; }
+
+  body.landing section#about .team .teammembers .member {
+    width: 100%; }
+
+  body.landing section#about .team .teammembers .member:nth-child(2),
+  body.landing section#about .team .teammembers .member {
+    margin-top: 20px; }
+
+  .postpreview {
+    width: 100%;
+    margin-bottom: 30px; }
+    .postpreview:last-child {
+      margin-bottom: 0; }
+
+  .newstileswrap {
+    margin-bottom: 0;
+    margin-top: 50px; }
+
+  body.landing section#jobs .jobs_collection .job a.button {
+    display: inline-block;
+    position: relative;
+    top: unset;
+    margin-top: 20px;
+    transform: none; }
+
+  body.landing section.collaborators {
+    padding-top: 50px; }
+
+  body.landing section.collaborators .logos {
+    column-gap: 30px;
+    row-gap: 10px; }
+
+  body.landing section.collaborators .logos img {
+    height: 30px; } }
+@media only screen and (max-width: 660px) {
+  body.supportoptions .option {
+    width: 100%; } }
+@media only screen and (max-width: 580px) {
+  footer .sitefooter .footercontent > div {
+    width: 50%; }
+
+  footer .sitefooter .footercontent .linktoduckdblabs .button,
+  footer .sitefooter .footercontent .gitbutton {
+    width: 170px; } }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  body.landing section,
+  main.job_template section,
+  main > section {
+    padding: 50px 15px; }
+
+  body.landing .whatsnew article.post .generative {
+    width: 100px;
+    height: 100px;
+    display: none; }
+
+  body.landing .whatsnew article.post .info {
+    width: 100%; }
+
+  .headerline .headercontent {
+    max-width: calc(100% - 20px); }
+
+  .form .formwrap {
+    width: 100%; }
+
+  .form .group.halfsize {
+    width: 100%; }
+
+  footer .sitefooter .footercontent > div {
+    width: 100%; }
+
+  body.landing .welcome .mainlinks ul a {
+    display: inline-block;
+    width: 100%; }
+    body.landing .welcome .mainlinks ul a li {
+      margin-left: 0;
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 10px; }
+
+  .newswrap {
+    width: 100%; }
+
+  .newswrap .postwrap {
+    width: calc(100% - 20px);
+    margin: 0 auto; }
+
+  footer .sitefooter .footercontent .bottomline {
+    font-size: 11px; } }
