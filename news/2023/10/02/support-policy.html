@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	
+	<title>DuckDB Labs – New Support Policy for DuckDB</title>
+	
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="https://duckdblabs.com/img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://duckdblabs.com/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://duckdblabs.com/img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="https://duckdblabs.com/img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="https://duckdblabs.com/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="https://duckdblabs.com/img/favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#000000">
+	<meta name="msapplication-config" content="https://duckdblabs.com/img/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	
+	<link rel="stylesheet" href="/css/normalize.css?322cf24">
+	<link rel="stylesheet" href="/css/main.css?322cf24">
+	<link rel="stylesheet" href="/css/mobilestyles.css?322cf24">
+
+	<meta property="og:image" content="https://duckdblabs.com/img/sharing.jpg" />
+	
+	<meta name="description" content="DuckDB Labs provides services around the DuckDB in-process OLAP data management system directly from its main developers.">
+	<meta property="og:description" content="DuckDB Labs provides services around the DuckDB in-process OLAP data management system directly from its main developers.">
+	
+	
+	<script src="https://www.google.com/recaptcha/enterprise.js?render=6Le8xWYkAAAAAH-Bv5Y2Mwo3zbGM3CYd18VuGXfG"></script>
+	<script>
+	grecaptcha.enterprise.ready(function() {
+		grecaptcha.enterprise.execute('6Le8xWYkAAAAAH-Bv5Y2Mwo3zbGM3CYd18VuGXfG', {action: 'login'}).then(function(token) {
+		   document.getElementById('captchaResponse').value = token;
+		});
+	});
+	</script>
+	
+</head>
+<body >
+	
+	<header>
+		<div class="headerline">
+			<div class="headercontent">
+				<div class="duckdblabshome">
+					<a href="/"><img src="/img/duckdb-labs-logo.png" alt="DuckDB Labs Logo"></a>
+				</div>
+				<div class="landingmenu">
+					<nav>
+						<ul class="menu">
+							
+							<li><a href="/#support">Support</a></li>
+							<li><a href="/#whatsnew">News</a></li>
+							<li><a href="/#about">About</a></li>
+							<li><a href="/#jobs">Jobs</a></li>
+							
+						</ul>
+					</nav>
+					<div class="hamburger hamburger--squeeze">
+						<div class="hamburger-box">
+							<div class="hamburger-inner"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<main>
+		
+		<div class="newswrap">
+		
+			<div class="postwrap">
+				<div class="postcontent">
+					
+						<div class="singleentry">
+							<div class="infoline"><span>2023-10-02</span><span></span></div>
+							<h1>New Support Policy for DuckDB</h1>
+							<p>DuckDB Labs is announcing a new support policy for DuckDB and our new flexible commercial support option.</p>
+
+<!--more-->
+
+<p>We are absolutely thrilled how much the DuckDB community has grown, from student projects to enterprise integrations. There are now millions of downloads each month and large growth in the <a href="https://discord.duckdb.org">Discord server</a>, Twitter followers, GitHub stars and so forth. When we started DuckDB back in 2018, we could have not imagined this level of adoption and we are absolutely humbled to see it.</p>
+
+<p>There are some drawbacks to having a large amount of users. The DuckDB project and the company behind the project, DuckDB Labs, are not funded by venture capital by our own choice. We feel investment would force the project direction towards monetization, and we would much prefer keeping DuckDB open and available for as many people as possible. This means that our team cannot grow at the same pace as DuckDB’s usage. This means we have to make some hard choices on how to prioritize our time.</p>
+
+<p><span id="free-support"></span>We would like to be upfront and clarify DuckDB’s support model, and the following policies apply to our free support:</p>
+
+<ul>
+  <li><span id="issues-and-discussions"></span> Users can file <a href="https://github.com/duckdb/duckdb/issues">bug reports as issues on GitHub</a> and <a href="https://github.com/duckdb/duckdb/discussions">suggests features on GitHub Discussions</a>.</li>
+  <li><span id="response-time"></span> There is no guarantee w.r.t. response time to the reports nor is there any guarantee that issues will be resolved (e.g., fixed) within any time frame.</li>
+  <li><span id="volume"></span> We are also unable to support a large volume of support requests from individuals or teams working in the same company.</li>
+  <li><span id="apis"></span> We only support the C, Java (JDBC), ODBC, Node.JS, Python and R client APIs as well as the command line shell. The C++ API is intended for internal use and is not designed as a stable user-facing API. The Julia and Swift APIs are rather experimental and not supported.</li>
+  <li><span id="extensions"></span> Within the main project, the community support policy only covers the the httpfs, icu, json and parquet extensions. The autocomplete, excel, fts, inet, sqlsmith, tpcds and tpch extensions are not supported.</li>
+  <li><span id="internals"></span> We are unable to answer questions about DuckDB internals, e.g., physical operators or storage internals. In general, if an issue cannot be triggered from SQL or one of the supported client APIs, it’s probably out of scope.</li>
+  <li><span id="apis-in-scope"></span> We are unable to answer questions regarding all repositories under the duckdb organization, only
+<a href="https://github.com/duckdb/duckdb/">duckdb/duckdb</a>,
+<a href="https://github.com/duckdb/duckdb-java/">duckdb/duckdb-java</a>,
+<a href="https://github.com/duckdb/duckdb-r/">duckdb/duckdb-r</a>,
+and
+<a href="https://github.com/duckdb/duckdb-node/">duckdb/duckdb-node</a>
+are in scope.</li>
+  <li><span id="crashes-and-internal-errors"></span> In general, issues that cause crashes (segfault, bus error, abort) and issues that result in internal errors get higher priority.</li>
+  <li><span id="platforms"></span> We can only support the following platforms: Windows 10+ on x86_64, macOS latest, Linux x86_64 &amp; aarch64 (mainstream distributions under support by distributor running with glibc). The last three Ubuntu LTS releases are a safe bet (currently: Ubuntu 20.04, 22.04 and 24.04).</li>
+  <li><span id="versions"></span> We only support the latest stable version and the bleeding edge version (<a href="https://github.com/duckdb/duckdb/tree/main"><code class="language-plaintext highlighter-rouge">main</code> branch</a>) of DuckDB.</li>
+  <li><span id="architectures"></span> We do not support 32-bit and big-endian architectures.</li>
+  <li><span id="debug-builds"></span> Debug builds of DuckDB’s clients and tooling are out of scope.</li>
+  <li><span id="discord"></span> Users are welcome to join our <a href="https://discord.duckdb.org">Discord server</a> to engage with the DuckDB community.</li>
+</ul>
+
+<p>For support requests that fall outside this support policy, we recommend contacting DuckDB Labs for <a href="https://duckdblabs.com/#support">commercial support options</a>. Commercial support contracts come with guaranteed response time, private issue tracker and private datasets, larger support volume and extended scope with regards to components.</p>
+
+<p>There are several ways that you can help us resolve issues more quickly. The more time you can spend to reduce our team’s workload regarding the issue, the more likely we can help. We sometimes spend an enormous amount of time divining missing information in bug reports like schema, datasets, previous state, environment, etc.</p>
+
+<ul>
+  <li><span id="issue-template"></span>Please (please) follow the issue template.</li>
+  <li><span id="data-sharing">Please make every effort to provide the data that is triggering the issue. The template advises to include all of the required data in your issue itself. Sometimes this means actually creating a dataset that you can share, which is preferably minimal in size. If you can only reproduce the issue on a proprietary data set, DuckDB Labs offers <a href="https://duckdblabs.com/support/">commercial support</a> where this is possible. We are not able to use proprietary data in the free support tier in general.</span></li>
+  <li><span id="test-cases">If possible, include test cases that succeed that are similar to the failure to help pinpoint the problem.</span></li>
+  <li><span id="multiple-clients">Try to replicate the issue in multiple clients (CLI preferred).</span></li>
+  <li><span id="debugging-issues">Debugging issues is a fantastic way to contribute to DuckDB!</span></li>
+  <li><span id="background-information">Providing background information about why you are approaching your task the way you are can help DuckDB Labs suggest workarounds prior to a fix.</span></li>
+</ul>
+
+<p>We would like to thank our awesome community and partners in joining us in the journey so far. We are looking forward to continuing our collaboration and delivering new releases DuckDB for everyone to use.</p>
+
+							<a href="/" class="backtoarchive"><span class="duckdbsymbol">&#8592;</span> back to main page</a>
+						</div>
+					
+				</div>
+			</div>
+			
+			
+		</div>
+		
+		
+	</main>
+
+<footer>
+	<div class="sitefooter">
+		<div class="footercontent">
+			<div class="footernavigation">
+				<div>
+					<h6>General</h6>
+					<a href="/#support">Support</a><br/>
+					<a href="/#whatsnew">What's new?</a><br/>
+					<a href="/#about">About</a><br/>
+				</div>
+				<div>
+					<h6>Contact information</h6>
+					<a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x68;&#x65;&#x6c;&#x6c;&#x6f;&#x40;&#x64;&#x75;&#x63;&#x6b;&#x64;&#x62;&#x6c;&#x61;&#x62;&#x73;&#x2e;&#x63;&#x6f;&#x6d;">
+					&#x68;&#x65;&#x6c;&#x6c;&#x6f;&#x40;&#x64;&#x75;&#x63;&#x6b;&#x64;&#x62;&#x6c;&#x61;&#x62;&#x73;&#x2e;&#x63;&#x6f;&#x6d;</a><br/>
+					<a href="/contact/">Contact form</a><br/>
+					<a href="https://drimble.nl/bedrijf/amsterdam/49812653/duckdb-engineering-bv.html">KVK number: 83657150</a>
+				</div>
+				<div>
+					<h6>Related sites</h6>
+					<a href="https://duckdb.org" target="_blank">DuckDB</a><br/>
+					<a href="https://duckdb.org/foundation" target="_blank">DuckDB Foundation</a><br/>
+					<a href="https://shop.duckdb.org/">DuckDB Webshop</a>
+				</div>
+				<div>
+					<h6>Community</h6>
+					<a href="https://twitter.com/duckdb" target="_blank">X (Twitter)</a><br/>
+					<a href="https://www.linkedin.com/company/duckdb/posts" target="_blank">LinkedIn</a><br/>
+					<a href="https://discord.duckdb.org" target="_blank">Discord</a><br/>
+					<a href="https://github.com/duckdb/duckdb" target="_blank">GitHub</a><br/>
+					<a href="https://stackoverflow.com/questions/tagged/duckdb" target="_blank">Stack Overflow</a>
+				</div>
+			</div>
+			<div class="footerlogo">
+				<img src="/img/DuckDBLabs-Footer.svg" class="duckdbfooter" alt="DuckDB Logo">
+			</div>
+			<div class="bottomline">
+				<div>© 2024 DuckDB Engineering BV, Amsterdam NL</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<script src="/js/jquery-3.6.0.min.js"></script>
+<script src="/js/lottie.min.js"></script>
+<script src="/js/script.js"></script>
+
+
+</body>
+</html>

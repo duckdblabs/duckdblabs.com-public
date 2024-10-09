@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	{% if page.title %}
+	<title>DuckDB Labs - {{ page.title }}</title>
+	{% else %}
+	<title>DuckDB Labs - Directly from the developers</title>
+	{% endif %}
+	
+	<!--
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/normalize.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/mobilestyles.css">
+	-->
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="{{ site.baseurl }}/images/favicon/site.webmanifest">
+	<link rel="mask-icon" href="{{ site.baseurl }}/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="{{ site.baseurl }}/images/favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#000000">
+	<meta name="msapplication-config" content="{{ site.baseurl }}/images/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	
+
+	<link rel="stylesheet" href="{{ '/css/normalize.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/css/mobilestyles.css' | relative_url }}">
+
+	<meta property="og:image" content="{{ site.baseurl }}/images/210406_Sharing.jpg" />
+	{% if page.description %}
+	<meta name="description" content="{{page.description}}">
+	<meta property="og:description" content="{{page.description}}">
+	{% else %}
+	<meta name="description" content="DuckDB Labs provides services around the DuckDB in-process OLAP data management system directly from its main developers.">
+	<meta property="og:description" content="DuckDB Labs provides services around the DuckDB in-process OLAP data management system directly from its main developers.">
+	{% endif %}
+	
+	
+
+	
+</head>
+<body {% if page.body_class %} class="{{ page.body_class }}" {% endif %}>
+	
+	<header>
+		<div class="headerline">
+			<div class="headercontent">
+				<div class="duckdblabshome">
+					<a href="{{ '/' | relative_url }}">DuckDB Labs</a>
+				</div>
+				<div class="menu">
+					<nav>
+						<ul class="menu">
+							<li><a href="#">Support</a></li>
+							<li><a href="#">News</a></li>
+							<li><a href="#">About</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		
+		{% if page.body_class contains "nowrap" %}
+
+			{{ content }}
+					
+		{% else %}
+			<div class="wrap">
+			
+				{{ content }}
+			
+			</div>	
+		{% endif %}
+
+	</main>
+
+		
+	<footer>
+		<div class="sitefooter">
+			<div class="footercontent">
+				<div>
+					<strong>DuckDB Labs</strong><br/>
+					Services for DuckDB<br/>
+					directly from the developers
+				</div>
+				<div>
+					<a href="#">Support</a><br/>
+					<a href="#">What's New?</a>
+				</div>
+				<div>
+					<a href="#">About</a><br/>
+					<a href="#">Jobs</a>
+				</div>
+				<div>
+					<a href="#">Twitter</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<script src="{{ '/js/jquery-3.6.0.slim.min.js' | relative_url }}"></script>
+	<script src="{{ '/js/script.js' | relative_url }}"></script>
+	
+
+</body>
+</html>
